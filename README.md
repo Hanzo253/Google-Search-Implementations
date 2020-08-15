@@ -1,1 +1,1 @@
-Google Search, Google Images Search, and Google Advanced Search Implementation based on CS50 Web Programming Project 0
+Google Search, Google Images Search, and Google Advanced Search Implementation
