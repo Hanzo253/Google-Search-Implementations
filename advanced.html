@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Google Advanced Search</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav item active">
+                    <div class="container">
+                        <a href="index.html" title="Go to Google Homepage"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" id="google-logo" alt="Google Logo"></a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div id="appbar">
+            <label>Advanced Search</label>
+        </div>
+        <div class="appbar-line"></div>
+        <form class="advanced-form" action="https://google.com/search">
+            <input value="en" name="h1" type="hidden">
+            <span class="find">Find pages with...</span>
+            <p>To do this in the search box</p>
+            <div class="advanced-labels">
+                <label class="left-search-labels">all these words:</label>
+                <input type="text" class="advanced-search-bars" id="all" name="as_q">
+                <label class="right-search-label">Type the important word:</label>
+                <span class="example-search-label">tricolor rat terrier</span>
+            </div>
+            <div class="advanced-labels">
+                <label class="left-search-labels">this exact word or phrase:</label>
+                <input type="text" class="advanced-search-bars" id="exact" name="as_epq">
+                <label class="right-search-label" id="right-exact">Put exact words in quotes:</label>
+                <span class="example-search-label" id="exact-example">"rat terrier"</span>
+            </div>
+            <div class="advanced-labels">
+                <label class="left-search-labels">any of these words:</label>
+                <input type="text" class="advanced-search-bars" id="any" name="as_oq">
+                <label class="right-search-label" id="right-any">Type OR between all the words you want:</label>
+                <span class="example-search-label" id="any-example">miniature OR standard</span>
+            </div>
+            <div class="advanced-labels">
+                <label class="left-search-labels">none of these words:</label>
+                <input type="text" class="advanced-search-bars" id="none" name="as_eq">
+                <label class="right-search-label" id="right-none">Put a minus sign just before words you don't want:</label>
+                <span class="example-search-label" id="none-example">-rodent, -"Jack Russell"</span>
+            </div>
+            <div class="advanced-labels">
+                <label class="left-search-labels">numbers ranging from:</label>
+                <input type="text" class="num-search-bars" name="as_nlo">
+                <label id="to">to</label>
+                <input type="text" class="num-search-bars" name="as_nhi">
+                <label class="right-search-label" id="num-text">Put 2 periods between the numbers and add a unit of measure:</label>
+                <span class="example-search-label" id="nums">10..35 lb, $300..$500, 2010..2011</span>
+            </div>
+            <input name="tbs" type="hidden" value="">
+            <input type="submit" class="advanced-search-btn" value="Advanced Search">
+            <div class="bar-line"></div>
+        </form>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>

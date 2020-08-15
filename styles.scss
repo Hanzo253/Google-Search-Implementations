@@ -1,0 +1,132 @@
+$position: relative;
+$abposition: absolute;
+$white: #ffffff;
+$black: #000000;
+$blue: #6495ED;
+$fontfamily: arial,sans-serif;
+
+@mixin topPosition($top) {
+    top: $top
+}
+
+@mixin leftPosition($left) {
+    left: $left
+}
+
+%btnPosition {
+    position: $abposition;
+    z-index: 2;
+    width: 1.375rem;
+    height: 1.375rem;
+    border: none;
+    background: $white;
+    text-align: center;
+}
+
+%padding {
+    padding-top: 40px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+
+.google {
+    position: $position;
+    @include topPosition(150px);
+}
+
+.google-img {
+    position: $position;
+    @include topPosition(150px);
+    width: 272px;
+    height: 92px;
+}
+
+#google-logo {
+    width: 92px;
+    height: 30px;
+}
+
+.search-bar {
+    position: $position;
+    @include topPosition(180px);
+}
+
+.search-button {
+    position: $position;
+    @include topPosition(210px);
+    @include leftPosition(150px);
+}
+
+.lucky-button {
+    position: $position;
+    @include topPosition(210px);
+    @include leftPosition(160px);
+}
+
+.has-search .form-control {
+    padding-left: 3.0rem;    
+}
+
+.has-search .form-control-feedback {
+    position: $abposition;
+    @include topPosition(180px);
+    @include leftPosition(20px);
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.search-btn {
+    @extend %btnPosition;
+    @include topPosition(185px);
+    @include leftPosition(585px);
+    color: $blue;
+}
+
+.search-btn:focus {
+    outline: none;
+}
+
+.clear-btn {
+    @extend %btnPosition;
+    @include topPosition(185px);
+    @include leftPosition(550px);
+    color: darkgrey;
+}
+
+.line {
+    border-left: 1px solid;
+    height: 65%;
+    position: $abposition;
+    @include topPosition(185px);
+    @include leftPosition(579px);
+    z-index: 2;
+}
+
+#appbar {
+    color: #d93025;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-right: 35px;
+    margin-bottom: 25px;
+    margin-left: 35px;
+}
+
+.appbar-line {
+    border-bottom: 1px solid #ebebeb;
+}
+
+label {
+    margin-left: 10px;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: $fontfamily;
+}
+
+@import "advancedsearch";

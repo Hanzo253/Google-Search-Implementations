@@ -1,0 +1,288 @@
+.search-btn, .clear-btn {
+  position: absolute;
+  z-index: 2;
+  width: 1.375rem;
+  height: 1.375rem;
+  border: none;
+  background: #ffffff;
+  text-align: center;
+}
+
+.find, .left-search-labels, .right-search-label {
+  padding-top: 40px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+
+.google {
+  position: relative;
+  top: 150px;
+}
+
+.google-img {
+  position: relative;
+  top: 150px;
+  width: 272px;
+  height: 92px;
+}
+
+#google-logo {
+  width: 92px;
+  height: 30px;
+}
+
+.search-bar {
+  position: relative;
+  top: 180px;
+}
+
+.search-button {
+  position: relative;
+  top: 210px;
+  left: 150px;
+}
+
+.lucky-button {
+  position: relative;
+  top: 210px;
+  left: 160px;
+}
+
+.has-search .form-control {
+  padding-left: 3.0rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  top: 180px;
+  left: 20px;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+.search-btn {
+  top: 185px;
+  left: 585px;
+  color: #6495ED;
+}
+
+.search-btn:focus {
+  outline: none;
+}
+
+.clear-btn {
+  top: 185px;
+  left: 550px;
+  color: darkgrey;
+}
+
+.line {
+  border-left: 1px solid;
+  height: 65%;
+  position: absolute;
+  top: 185px;
+  left: 579px;
+  z-index: 2;
+}
+
+#appbar {
+  color: #d93025;
+  font-size: 20px;
+  margin-top: 25px;
+  margin-right: 35px;
+  margin-bottom: 25px;
+  margin-left: 35px;
+}
+
+.appbar-line {
+  border-bottom: 1px solid #ebebeb;
+}
+
+label {
+  margin-left: 10px;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: arial, sans-serif;
+}
+
+.left-search-labels, .right-search-label, .example-search-label, .advanced-search-bars, .num-search-bars, #to {
+  position: relative;
+  bottom: 80px;
+}
+
+.appbar-line {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.bar-line {
+  position: relative;
+  bottom: 20px;
+  clear: both;
+  border-top: 1px solid #ebebeb;
+}
+
+label {
+  margin-left: 10px;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: arial, sans-serif;
+}
+
+.find {
+  height: 30px;
+  display: table-cell;
+  vertical-align: middle;
+  display: inline-block;
+  font-family: arial, sans-serif;
+}
+
+p {
+  position: relative;
+  left: 814px;
+  bottom: 50px;
+  height: 30px;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #777;
+}
+
+.advanced-labels {
+  height: 45px;
+  clear: both;
+}
+
+.advanced-form {
+  float: left;
+  width: 100%;
+}
+
+.left-search-labels {
+  right: 10px;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+}
+
+.right-search-label {
+  right: 20px;
+  font-family: arial, sans-serif;
+  color: #555;
+  font-size: 11px;
+}
+
+.example-search-label {
+  right: 65px;
+  font-family: monospace;
+  color: #666;
+  font-size: 11px;
+  white-space: pre;
+}
+
+.advanced-search-bars {
+  width: 30%;
+  height: 30px;
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  vertical-align: middle;
+}
+
+.num-search-bars {
+  right: 9px;
+  width: 14.24%;
+  height: 30px;
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+}
+
+#to {
+  right: 14px;
+  font-size: 13px;
+  color: #222;
+}
+
+.advanced-search-btn {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  line-height: 100%;
+  height: 30px;
+  min-width: 120px;
+  background-color: #4d90fe;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
+  border: 1px solid #3079ed;
+  color: white;
+  border-radius: 2px;
+  cursor: default;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  float: right;
+  margin: 10px 0;
+  position: relative;
+  bottom: 50px;
+  right: 1108px;
+}
+
+#all {
+  left: 30px;
+}
+
+#exact {
+  right: 28px;
+}
+
+#right-exact {
+  right: 77px;
+}
+
+#exact-example {
+  right: 118px;
+}
+
+#any {
+  left: 9px;
+}
+
+#right-any {
+  right: 41px;
+}
+
+#any-example {
+  right: 85px;
+}
+
+#none {
+  left: 1px;
+}
+
+#right-none {
+  right: 47px;
+}
+
+#none-example {
+  right: 95px;
+}
+
+#num-text {
+  right: 57px;
+}
+
+#nums {
+  right: 100px;
+}
+/*# sourceMappingURL=styles.css.map */
